@@ -1,6 +1,6 @@
 # Parsly for Claude Code
 
-Study any YouTube channel from Claude Code. Parsly finds the videos that broke out, reads how they open, and turns what worked into hooks and video ideas for your own channel. The skills are free; Parsly's Chrome extension fetches the videos through your own browser, because YouTube doesn't give transcripts to servers.
+Turn the sites you research into clean data Claude can use. Parsly starts with YouTube, with more sources on the way: it finds the videos that broke out, reads how they open, and turns what worked into hooks and video ideas for your own channel. The skills are free; Parsly's Chrome extension fetches the videos through your own browser, because YouTube doesn't give transcripts to servers.
 
 ## What it does for you
 
@@ -12,15 +12,15 @@ Study any YouTube channel from Claude Code. Parsly finds the videos that broke o
    ```
    It adds three skills and Parsly's connection. Type `/mcp`, choose **parsly** and sign in with the same Parsly account.
 3. **Ask:**
-   - **Teardown** (`/parsly:teardown`): "Why did @mkbhd's last breakout work?" Finds the videos that beat the channel's usual views, reads their openings, and tells you what they share and what to try.
-   - **Hooks** (`/parsly:hooks`): "How do the top sourdough channels open their videos?" A library of the openings that work in a niche, sorted by the move they make, with templates.
+   - **Teardown** (`/parsly:teardown`): "Why did [@channel]'s last breakout work?" Finds the videos that beat the channel's usual views, reads their openings, and tells you what they share and what to try.
+   - **Hooks** (`/parsly:hooks`): "How do the top [niche] channels open their videos?" A library of the openings that work in a niche, sorted by the move they make, with templates.
    - **Video ideas** (`/parsly:video-ideas`): "What should I make next for @mychannel?" Ten ideas, each built on a real breakout in your niche, with a hook for the first ten seconds.
 
 You don't need to name a skill: ask in your own words and Claude picks the right one.
 
 ## How it does it
 
-- **Parsly's tools** (`.mcp.json`, Parsly's server at `https://api.parsly.to/mcp`): `parsly_status` (is Parsly in Chrome connected?), `youtube_channel_videos` (a channel's uploads, read live), `youtube_read_transcripts` (up to 5 transcripts into the conversation) and `youtube_download_transcripts` (many, saved to your Downloads as a dated folder: `parsly/2026-10-15-starter-story/` with one Markdown file per video and an `index.json`), followed by `job_status`. Transcripts are fetched by Parsly in your Chrome while it's open; nothing about the videos or transcripts is kept on Parsly's server.
+- **Parsly's tools** (`.mcp.json`, Parsly's server at `https://api.parsly.to/mcp`): `parsly_status` (is Parsly in Chrome connected?), `youtube_channel_videos` (a channel's uploads, read live), `youtube_read_transcripts` (up to 5 transcripts into the conversation) and `youtube_download_transcripts` (many, saved to your Downloads as a dated folder: `parsly/2026-10-15-hollis-workshop/` with one Markdown file per video and an `index.json`), followed by `job_status`. Transcripts are fetched by Parsly in your Chrome while it's open; nothing about the videos or transcripts is kept on Parsly's server.
 - **Every skill checks `parsly_status` first.** Until Parsly in Chrome is signed in and connected, the tools refuse and say how to set it up, and the skill passes that on.
 - **Breakouts** are worked out by Parsly's server: `youtube_channel_videos` returns each video's views as a number and `xUsual`, its views against its neighbours' (the uploads around it), so a channel that grew still shows its real breakouts, sorted newest or biggest-breakout first, at most `limit` (60 by default). Views are YouTube's rounded counts and dates are relative, so the numbers are approximate; videos under two weeks old aren't scored.
 - **Openings by default:** `youtube_read_transcripts` returns each video's first minute unless asked for `part: "full"`, which keeps the conversation small and is what the skills mostly need.

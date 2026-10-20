@@ -1,6 +1,6 @@
 {
   "name": "parsly",
-  "description": "Parsly's Claude Code plugin: study YouTube channels, hooks and video ideas, with videos fetched through your own Chrome.",
+  "description": "Parsly's Claude Code plugin: turn the sites you research into clean data Claude can use. Starting with YouTube channels, hooks and video ideas.",
   "owner": {
     "name": "mattblu",
     "url": "https://mattblu.com"

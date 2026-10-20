@@ -1,8 +1,8 @@
 {
   "name": "parsly",
   "displayName": "Parsly",
-  "version": "0.1.0",
-  "description": "Study any YouTube channel from Claude Code: find the videos that broke out and why, collect the hooks that work in a niche, and get video ideas built on real breakouts. Parsly fetches the videos through your own Chrome.",
+  "version": "0.1.1",
+  "description": "Turn the sites you research into clean data Claude can use, fetched through your own Chrome. Starting with YouTube: find the videos that broke out and why, collect the hooks that work in a niche, and get video ideas built on real breakouts. More sources on the way.",
   "author": { "name": "mattblu", "url": "https://mattblu.com" },
   "homepage": "https://parsly.to",
   "license": "MIT",

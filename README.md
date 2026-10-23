@@ -4,7 +4,7 @@ Turn the sites you research into clean data Claude can use. Parsly starts with Y
 
 ## What it does for you
 
-1. **Install Parsly in Chrome** from [parsly.to](https://parsly.to) and sign in. In its first screen, copy the command for Claude Code.
+1. **Install Parsly in Chrome** from the [Chrome Web Store](https://chromewebstore.google.com/detail/parsly/hdnbkllgpjckoiecocnjocligdkajlbh) and sign in. In its first screen, copy the command for Claude Code.
 2. **Install the plugin** in Claude Code:
    ```
    /plugin marketplace add itsmattblu/parsly

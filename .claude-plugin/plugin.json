@@ -1,10 +1,20 @@
 {
   "name": "parsly",
   "displayName": "Parsly",
-  "version": "0.1.1",
-  "description": "Turn the sites you research into clean data Claude can use, fetched through your own Chrome. Starting with YouTube: find the videos that broke out and why, collect the hooks that work in a niche, and get video ideas built on real breakouts. More sources on the way.",
-  "author": { "name": "mattblu", "url": "https://mattblu.com" },
+  "version": "0.2.0",
+  "description": "Parsly's connection for Claude Code: clean data from the sites you research, fetched through your own Chrome. Starting with YouTube: collect the hooks that work in a niche and get video ideas built on real breakouts. For why a creator's posts and videos broke out, add REG's creator-growth skill. More sources on the way.",
+  "author": {
+    "name": "mattblu",
+    "url": "https://mattblu.com"
+  },
   "homepage": "https://parsly.to",
   "license": "MIT",
-  "keywords": ["youtube", "creators", "video ideas", "hooks", "transcripts", "research"]
+  "keywords": [
+    "youtube",
+    "creators",
+    "video ideas",
+    "hooks",
+    "transcripts",
+    "research"
+  ]
 }

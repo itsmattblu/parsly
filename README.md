@@ -10,13 +10,14 @@ Turn the sites you research into clean data Claude can use. Parsly starts with Y
    /plugin marketplace add itsmattblu/parsly
    /plugin install parsly@parsly
    ```
-   It adds three skills and Parsly's connection. Type `/mcp`, choose **parsly** and sign in with the same Parsly account.
+   It adds two skills and Parsly's connection. Type `/mcp`, choose **parsly** and sign in with the same Parsly account.
 3. **Ask:**
-   - **Teardown** (`/parsly:teardown`): "Why did [@channel]'s last breakout work?" Finds the videos that beat the channel's usual views, reads their openings, and tells you what they share and what to try.
    - **Hooks** (`/parsly:hooks`): "How do the top [niche] channels open their videos?" A library of the openings that work in a niche, sorted by the move they make, with templates.
    - **Video ideas** (`/parsly:video-ideas`): "What should I make next for @mychannel?" Ten ideas, each built on a real breakout in your niche, with a hook for the first ten seconds.
 
 You don't need to name a skill: ask in your own words and Claude picks the right one.
+
+**Why a channel's videos broke out, or how a creator grew,** is now `/reg:creator-growth` in the free [REG plugin](https://github.com/itsmattblu/reverse-engineer-growth), which uses Parsly's tools when they're connected: install both.
 
 ## How it does it
 
